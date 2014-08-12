@@ -12,13 +12,15 @@ Until only manual installation.
 
 1. Clone to 'vendor' folder
 2. open 'vendors/yyisoft/extensions.php' and paste:
-    'de1phi/yii2-rights' => array (
-        'name' => 'de1phi/yii2-rights',
-        'version' => '0.0.0.1-beta',
-        'alias' => array (
-            '@de1phi/rights' => $vendorDir . '/de1phi/yii2-rights',
-        ),
+```php
+'de1phi/yii2-rights' => array (
+    'name' => 'de1phi/yii2-rights',
+    'version' => '0.0.0.1-beta',
+    'alias' => array (
+       '@de1phi/rights' => $vendorDir . '/de1phi/yii2-rights',
     ),
+),
+```
 3. open 'vendors/de1phi/yii2-rights/controllers/AssignmentController.php' and edit line:
 `use de1phi\user\models\User;`
 paste your model of user
